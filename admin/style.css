@@ -1,0 +1,302 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+    }
+    
+    body{
+    background:#f5f7fb;
+    }
+    
+    /* HEADER */
+    header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    background:#003580;
+    color:white;
+    }
+    
+    header a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:500;
+    }
+    
+    /* HERO */
+    .hero{
+    height:75vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+    url('https://images.unsplash.com/photo-1501117716987-c8e1ecb2105b') center/cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+    }
+    
+    .hero h1{
+    font-size:48px;
+    margin-bottom:10px;
+    }
+    
+    .hero p{
+    font-size:18px;
+    opacity:0.9;
+    }
+    
+    /* SEARCH */
+    .search-box{
+    margin-top:20px;
+    background:white;
+    padding:10px;
+    border-radius:12px;
+    display:flex;
+    gap:10px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    }
+    
+    .search-box input{
+    padding:10px;
+    border:none;
+    outline:none;
+    width:200px;
+    }
+    
+    .search-box button{
+    padding:10px 20px;
+    border:none;
+    background:#0071c2;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    }
+    
+    /* CARDS */
+    .container{
+    padding:50px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:25px;
+    justify-content:center;
+    }
+    
+    .card{
+    width:300px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    transition:0.3s;
+    }
+    
+    .card:hover{
+    transform:translateY(-8px);
+    }
+    
+    .card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    }
+    
+    .card-content{
+    padding:15px;
+    }
+    
+    .card h3{
+    margin-bottom:5px;
+    }
+    
+    .card p{
+    color:#666;
+    font-size:14px;
+    }
+    
+    .price{
+    color:#0071c2;
+    font-weight:bold;
+    margin-top:10px;
+    }
+    
+    .card button{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    border:none;
+    background:#003580;
+    color:white;
+    cursor:pointer;
+    border-radius:8px;
+    }
+    
+    /* FOOTER */
+    footer{
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+    background:#003580;
+    color:white;
+    }
+
+    /* ===== NAVBAR ADMIN ===== */
+.admin-header {
+    background: linear-gradient(90deg, #003580, #0071c2);
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-header h2 {
+    font-weight: bold;
+}
+
+.admin-header nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.admin-header nav a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* ===== CONTAINER ===== */
+.admin-container {
+    padding: 40px;
+    background: #f4f7fb;
+    min-height: 100vh;
+}
+
+/* ===== TITLE ===== */
+.admin-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* ===== ADD BUTTON ===== */
+.btn-add {
+    background: linear-gradient(45deg, #28a745, #20c997);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* ===== GRID ===== */
+.admin-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* ===== CARD ===== */
+.admin-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    position: relative;
+}
+
+.admin-card:hover {
+    transform: translateY(-8px);
+}
+
+/* badge color */
+.admin-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #0071c2, #00c6ff);
+    border-radius: 15px 15px 0 0;
+}
+
+/* text */
+.admin-card h3 {
+    margin-bottom: 10px;
+}
+
+.admin-card p {
+    color: #555;
+    font-size: 14px;
+}
+
+/* ===== ACTION BUTTONS ===== */
+.admin-actions {
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 7px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: 0.3s;
+    background: #0071c2;
+    color: white;
+}
+
+.btn:hover {
+    background: #005999;
+}
+
+.btn-edit {
+    /* Uses default .btn style */
+}
+
+.btn-delete {
+    /* Uses default .btn style */
+}
+
+.btn-edit:hover, .btn-delete:hover {
+    background: #005999;
+}
+
+/* ===== BADGES ===== */
+.badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.badge-email {
+    background: #e3f2fd;
+    color: #0071c2;
+}
+
+.badge-phone {
+    background: #e8f5e9;
+    color: #28a745;
+}
+
+.badge-money {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.badge-date {
+    background: #f8d7da;
+    color: #721c24;
+}

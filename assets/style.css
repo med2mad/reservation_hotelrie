@@ -1,0 +1,33 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Images chambres */
+.img-room {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Cards dashboard */
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Boutons */
+.btn {
+    border-radius: 20px;
+}
+
+/* Table */
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+}
